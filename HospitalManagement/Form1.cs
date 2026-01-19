@@ -51,11 +51,12 @@ namespace HospitalManagement
 
                     if (dbPassword == inputPassword)
                     {
-                        MessageBox.Show("✅ Login Successful");
+                        MessageBox.Show("successfully log in");
+                        int did = Convert.ToInt32(dbUserId);
                         if (dbRole == "doctor")
                         {
                            
-                            nahid docForm = new nahid(Convert.ToInt32(dbUserId));
+                            nahid docForm = new nahid(did);
                             docForm.Show();
                             this.Hide();
 

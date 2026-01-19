@@ -53,6 +53,8 @@ namespace HospitalManagement
             InitializeComponent();
             LoadPatientsByDoctorFromAppointment(1);
             parentPanel = P;
+            did = doctorid;
+            
         }
 
 
@@ -119,6 +121,7 @@ namespace HospitalManagement
 
             parentPanel.Controls.Add(treat);
             treat.Show();
+            //MessageBox.Show(did.ToString());
         }
     }
 }

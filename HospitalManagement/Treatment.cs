@@ -64,6 +64,7 @@ namespace HospitalManagement
             did = d_id;
             disease = dis;
             lbldisease.Text = disease;
+            MessageBox.Show(d_id.ToString());
         }
         public Treatment()
         {
@@ -102,6 +103,12 @@ namespace HospitalManagement
             }
             if (cburine.Checked)
             {
+                rtbtest.AppendText("• " + cburine.Text + "\n");
+                cburine.Checked = false;
+
+            }
+            if (cbhiv.Checked)
+            {
                 rtbtest.AppendText("• " + cbhiv.Text + "\n");
                 cbhiv.Checked = false;
 
@@ -111,6 +118,29 @@ namespace HospitalManagement
 
         private void label6_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection con = new SqlConnection(Global.constring))
+            {
+                con.Open();
+
+           
+                string query = $"INSERT INTO prescription (doctor_id,patient_id,prescription_info,medicine) VALUES (@did,@pid,@pi,@med)";
+
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@did", did);
+                    cmd.Parameters.AddWithValue("@pid", pid);
+                    cmd.Parameters.AddWithValue("@pi", rtbtest.Text);
+                    cmd.Parameters.AddWithValue("@med", rtmed.Text);
+
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("successfully");
+                }
+            }
 
         }
     }

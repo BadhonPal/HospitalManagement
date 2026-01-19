@@ -16,6 +16,8 @@ namespace HospitalManagement
         public nahid(int id) {
             InitializeComponent();
              did=id;
+            MessageBox.Show("Doctor ID: " + did);
+
         }
         public nahid()
         {
