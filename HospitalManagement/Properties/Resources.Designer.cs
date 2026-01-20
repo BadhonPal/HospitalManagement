@@ -136,6 +136,16 @@ namespace HospitalManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap doctorlogin__Converted_ {
+            get {
+                object obj = ResourceManager.GetObject("doctorlogin [Converted]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dollar_banknotes_isolate_white_background_1127111_286_jpg_cropped {
             get {
                 object obj = ResourceManager.GetObject("dollar-banknotes-isolate-white-background_1127111-286.jpg_cropped", resourceCulture);
@@ -176,10 +186,40 @@ namespace HospitalManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap medicallogo_nahid {
+            get {
+                object obj = ResourceManager.GetObject("medicallogo nahid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nahidprofilr {
+            get {
+                object obj = ResourceManager.GetObject("nahidprofilr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap patient_engagement_healthcare_data_management_monotone_icon_in_powerpoint_pptx_png_and_editable_eps_format_slide01_cropped {
             get {
                 object obj = ResourceManager.GetObject("patient_engagement_healthcare_data_management_monotone_icon_in_powerpoint_pptx_pn" +
                         "g_and_editable_eps_format_slide01_cropped", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_01_21_at_1_03_46_AM_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2026-01-21_at_1.03.46_AM-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

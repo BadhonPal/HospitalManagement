@@ -151,6 +151,7 @@
             this.label6.Size = new System.Drawing.Size(187, 51);
             this.label6.TabIndex = 5;
             this.label6.Text = "Profile";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label1
             // 

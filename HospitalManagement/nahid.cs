@@ -114,14 +114,27 @@ namespace HospitalManagement
 
         private void label8_Click(object sender, EventArgs e)
         {
-            Form1 f = new Form1();
-            f.Show();
+            Login li = new Login();
+            li.Show();
             this.Hide();
         }
 
         private void label11_Click(object sender, EventArgs e)
         {
             godashboard(did);
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            panelfill.Controls.Clear(); // remove previous page
+
+            doctorprofile op = new doctorprofile(did); // child form
+            op.TopLevel = false;               // IMPORTANT
+            op.FormBorderStyle = FormBorderStyle.None;
+            op.Dock = DockStyle.Fill;
+
+            panelfill.Controls.Add(op);
+            op.Show();
         }
     }
 }

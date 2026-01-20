@@ -37,7 +37,7 @@ namespace HospitalManagement
         WHERE a.doctor_id = @doctorId";
 
                 SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@doctorId", 1);
+                cmd.Parameters.AddWithValue("@doctorId", doctorId);
 
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -54,7 +54,7 @@ namespace HospitalManagement
         public waitting(int doctorid,Panel P)
         {
             InitializeComponent();
-            LoadPatientsByDoctorFromAppointment(1);
+            LoadPatientsByDoctorFromAppointment(doctorid);
             parentPanel = P;
             did = doctorid;
             
