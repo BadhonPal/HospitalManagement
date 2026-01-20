@@ -73,6 +73,38 @@ namespace HospitalManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _14244649 {
+            get {
+                object obj = ResourceManager.GetObject("14244649", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _20713709_illustrazione_vettore_grafico_di_disconnettersi_icona_uscita_icon_eps_gratuito_vettoriale_cropped {
+            get {
+                object obj = ResourceManager.GetObject("20713709-illustrazione-vettore-grafico-di-disconnettersi-icona-uscita-icon-eps-gr" +
+                        "atuito-vettoriale_cropped", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3d_render_man_doctor_avatar_round_sticker_with_cartoon_character_face_user_id_thumbnail_modern_1181551_95_jpg_cropped {
+            get {
+                object obj = ResourceManager.GetObject("3d-render-man-doctor-avatar-round-sticker-with-cartoon-character-face-user-id-thu" +
+                        "mbnail-modern_1181551-95.jpg_cropped", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _561776_200 {
             get {
                 object obj = ResourceManager.GetObject("561776-200", resourceCulture);
@@ -83,9 +115,81 @@ namespace HospitalManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap d_doctor_profile_icon_white_background_stylized_d_profile_icon_doctor_set_against_pure_white_background_featuring_378081114_jpg_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("d-doctor-profile-icon-white-background-stylized-d-profile-icon-doctor-set-against" +
+                        "-pure-white-background-featuring-378081114.jpg-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap data_visualization_dashboard_kpi_widgets_600nw_2667801237_jpg_cropped {
+            get {
+                object obj = ResourceManager.GetObject("data-visualization-dashboard-kpi-widgets-600nw-2667801237.jpg_cropped", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dollar_banknotes_isolate_white_background_1127111_286_jpg_cropped {
+            get {
+                object obj = ResourceManager.GetObject("dollar-banknotes-isolate-white-background_1127111-286.jpg_cropped", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hourglass_icon_3d_rendering_illustration_260nw_2537649629_jpg_cropped {
+            get {
+                object obj = ResourceManager.GetObject("hourglass-icon-3d-rendering-illustration-260nw-2537649629.jpg_cropped", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icontexto_message_types_wait_red {
+            get {
+                object obj = ResourceManager.GetObject("icontexto-message-types-wait-red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap images_2 {
             get {
                 object obj = ResourceManager.GetObject("images-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap patient_engagement_healthcare_data_management_monotone_icon_in_powerpoint_pptx_png_and_editable_eps_format_slide01_cropped {
+            get {
+                object obj = ResourceManager.GetObject("patient_engagement_healthcare_data_management_monotone_icon_in_powerpoint_pptx_pn" +
+                        "g_and_editable_eps_format_slide01_cropped", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap unnamed_2_cropped {
+            get {
+                object obj = ResourceManager.GetObject("unnamed-2_cropped", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

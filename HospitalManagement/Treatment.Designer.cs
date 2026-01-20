@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label7 = new System.Windows.Forms.Label();
             this.rtmed = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,6 +59,9 @@
             this.btntest = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.lbldisease = new System.Windows.Forms.Label();
+            this.btnoldpiscribetion = new System.Windows.Forms.Button();
+            this.dgvbpriscribe = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvbpriscribe)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -66,24 +70,25 @@
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(12, 85);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(501, 51);
+            this.label7.Size = new System.Drawing.Size(397, 51);
             this.label7.TabIndex = 7;
             this.label7.Text = "Name :";
             // 
             // rtmed
             // 
             this.rtmed.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtmed.Location = new System.Drawing.Point(726, 154);
+            this.rtmed.Location = new System.Drawing.Point(709, 157);
             this.rtmed.Name = "rtmed";
-            this.rtmed.Size = new System.Drawing.Size(428, 566);
+            this.rtmed.Size = new System.Drawing.Size(407, 546);
             this.rtmed.TabIndex = 8;
             this.rtmed.Text = "";
+            this.rtmed.TextChanged += new System.EventHandler(this.rtmed_TextChanged);
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(737, 38);
+            this.label1.Location = new System.Drawing.Point(661, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(350, 51);
             this.label1.TabIndex = 9;
@@ -144,9 +149,9 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(949, 752);
+            this.button1.Location = new System.Drawing.Point(932, 721);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(205, 66);
+            this.button1.Size = new System.Drawing.Size(184, 66);
             this.button1.TabIndex = 16;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
@@ -157,7 +162,7 @@
             this.button2.BackColor = System.Drawing.Color.Maroon;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(545, 752);
+            this.button2.Location = new System.Drawing.Point(528, 721);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(378, 66);
             this.button2.TabIndex = 17;
@@ -240,19 +245,20 @@
             // 
             this.rtbtest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbtest.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.rtbtest.Location = new System.Drawing.Point(545, 154);
+            this.rtbtest.Location = new System.Drawing.Point(528, 157);
             this.rtbtest.Name = "rtbtest";
-            this.rtbtest.Size = new System.Drawing.Size(186, 566);
+            this.rtbtest.Size = new System.Drawing.Size(186, 546);
             this.rtbtest.TabIndex = 26;
             this.rtbtest.Text = "";
+            this.rtbtest.TextChanged += new System.EventHandler(this.rtbtest_TextChanged);
             // 
             // rtname
             // 
             this.rtname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtname.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.rtname.Location = new System.Drawing.Point(545, 92);
+            this.rtname.Location = new System.Drawing.Point(528, 95);
             this.rtname.Name = "rtname";
-            this.rtname.Size = new System.Drawing.Size(609, 66);
+            this.rtname.Size = new System.Drawing.Size(588, 66);
             this.rtname.TabIndex = 27;
             this.rtname.Text = "";
             // 
@@ -268,7 +274,7 @@
             // 
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Maroon;
-            this.label17.Location = new System.Drawing.Point(29, 470);
+            this.label17.Location = new System.Drawing.Point(29, 500);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(263, 51);
             this.label17.TabIndex = 29;
@@ -279,7 +285,7 @@
             this.cbcbc.AutoSize = true;
             this.cbcbc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbcbc.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.cbcbc.Location = new System.Drawing.Point(36, 524);
+            this.cbcbc.Location = new System.Drawing.Point(36, 554);
             this.cbcbc.Name = "cbcbc";
             this.cbcbc.Size = new System.Drawing.Size(98, 33);
             this.cbcbc.TabIndex = 30;
@@ -291,7 +297,7 @@
             this.cbmri.AutoSize = true;
             this.cbmri.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbmri.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.cbmri.Location = new System.Drawing.Point(335, 573);
+            this.cbmri.Location = new System.Drawing.Point(335, 603);
             this.cbmri.Name = "cbmri";
             this.cbmri.Size = new System.Drawing.Size(91, 33);
             this.cbmri.TabIndex = 31;
@@ -303,7 +309,7 @@
             this.cbxray.AutoSize = true;
             this.cbxray.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxray.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.cbxray.Location = new System.Drawing.Point(177, 573);
+            this.cbxray.Location = new System.Drawing.Point(177, 603);
             this.cbxray.Name = "cbxray";
             this.cbxray.Size = new System.Drawing.Size(129, 33);
             this.cbxray.TabIndex = 32;
@@ -315,7 +321,7 @@
             this.cbhiv.AutoSize = true;
             this.cbhiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbhiv.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.cbhiv.Location = new System.Drawing.Point(36, 573);
+            this.cbhiv.Location = new System.Drawing.Point(36, 603);
             this.cbhiv.Name = "cbhiv";
             this.cbhiv.Size = new System.Drawing.Size(86, 33);
             this.cbhiv.TabIndex = 33;
@@ -327,7 +333,7 @@
             this.cbdengue.AutoSize = true;
             this.cbdengue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbdengue.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.cbdengue.Location = new System.Drawing.Point(335, 524);
+            this.cbdengue.Location = new System.Drawing.Point(335, 554);
             this.cbdengue.Name = "cbdengue";
             this.cbdengue.Size = new System.Drawing.Size(136, 33);
             this.cbdengue.TabIndex = 34;
@@ -339,7 +345,7 @@
             this.cburine.AutoSize = true;
             this.cburine.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cburine.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.cburine.Location = new System.Drawing.Point(177, 524);
+            this.cburine.Location = new System.Drawing.Point(177, 554);
             this.cburine.Name = "cburine";
             this.cburine.Size = new System.Drawing.Size(108, 33);
             this.cburine.TabIndex = 35;
@@ -351,7 +357,7 @@
             this.btntest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btntest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntest.ForeColor = System.Drawing.Color.White;
-            this.btntest.Location = new System.Drawing.Point(252, 631);
+            this.btntest.Location = new System.Drawing.Point(252, 661);
             this.btntest.Name = "btntest";
             this.btntest.Size = new System.Drawing.Size(216, 66);
             this.btntest.TabIndex = 36;
@@ -380,11 +386,46 @@
             this.lbldisease.TabIndex = 38;
             this.lbldisease.Text = "problem";
             // 
+            // btnoldpiscribetion
+            // 
+            this.btnoldpiscribetion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnoldpiscribetion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnoldpiscribetion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnoldpiscribetion.Location = new System.Drawing.Point(10, 419);
+            this.btnoldpiscribetion.Name = "btnoldpiscribetion";
+            this.btnoldpiscribetion.Size = new System.Drawing.Size(474, 68);
+            this.btnoldpiscribetion.TabIndex = 40;
+            this.btnoldpiscribetion.Text = "View Old Prescription";
+            this.btnoldpiscribetion.UseVisualStyleBackColor = false;
+            this.btnoldpiscribetion.Click += new System.EventHandler(this.btnoldpiscribetion_Click);
+            // 
+            // dgvbpriscribe
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvbpriscribe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvbpriscribe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvbpriscribe.Location = new System.Drawing.Point(10, 12);
+            this.dgvbpriscribe.Name = "dgvbpriscribe";
+            this.dgvbpriscribe.RowHeadersWidth = 82;
+            this.dgvbpriscribe.RowTemplate.Height = 33;
+            this.dgvbpriscribe.Size = new System.Drawing.Size(471, 401);
+            this.dgvbpriscribe.TabIndex = 0;
+            this.dgvbpriscribe.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvbpriscribe_CellClick);
+            this.dgvbpriscribe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvbpriscribe_CellContentClick);
+            // 
             // Treatment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1190, 830);
+            this.ClientSize = new System.Drawing.Size(1137, 814);
+            this.Controls.Add(this.dgvbpriscribe);
+            this.Controls.Add(this.btnoldpiscribetion);
             this.Controls.Add(this.lbldisease);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btntest);
@@ -417,6 +458,7 @@
             this.Controls.Add(this.label7);
             this.Name = "Treatment";
             this.Load += new System.EventHandler(this.Treatment_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvbpriscribe)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -453,5 +495,7 @@
         private System.Windows.Forms.Button btntest;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lbldisease;
+        private System.Windows.Forms.Button btnoldpiscribetion;
+        private System.Windows.Forms.DataGridView dgvbpriscribe;
     }
 }

@@ -13,10 +13,24 @@ namespace HospitalManagement
     public partial class nahid : Form
     {
         int did;
+        void godashboard(int d_id) {
+            panelfill.Controls.Clear(); // remove previous page
+
+            dashboard dash = new dashboard(d_id); // child form
+            dash.TopLevel = false;               // IMPORTANT
+            dash.FormBorderStyle = FormBorderStyle.None;
+            dash.Dock = DockStyle.Fill;
+
+            panelfill.Controls.Add(dash);
+            dash.Show();
+        }
         public nahid(int id) {
             InitializeComponent();
              did=id;
-            MessageBox.Show("Doctor ID: " + did);
+            godashboard(id);
+
+
+            //MessageBox.Show("Doctor ID: " + did);
 
         }
         public nahid()
@@ -46,7 +60,9 @@ namespace HospitalManagement
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            nahid n = new nahid(did);
+            n.Show();
+            this.Hide();
         }
 
         private void panelfill_Paint(object sender, PaintEventArgs e)
@@ -80,6 +96,32 @@ namespace HospitalManagement
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void lbloldpatient_Click(object sender, EventArgs e)
+        {
+            panelfill.Controls.Clear(); // remove previous page
+
+            oldPatient op = new oldPatient(did, panelfill); // child form
+            op.TopLevel = false;               // IMPORTANT
+            op.FormBorderStyle = FormBorderStyle.None;
+            op.Dock = DockStyle.Fill;
+
+            panelfill.Controls.Add(op);
+            op.Show();
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.Show();
+            this.Hide();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            godashboard(did);
         }
     }
 }

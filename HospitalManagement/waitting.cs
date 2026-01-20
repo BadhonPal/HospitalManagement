@@ -42,7 +42,10 @@ namespace HospitalManagement
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
+                dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dataGridView1.EnableHeadersVisualStyles = false;
 
+                dataGridView1.AllowUserToAddRows = false;
                 dataGridView1.DataSource = dt;
             }
         }
@@ -81,6 +84,7 @@ namespace HospitalManagement
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex < 0) return;
             int pid = Convert.ToInt32(
         dataGridView1.Rows[e.RowIndex]
                         .Cells["patient_id"]
@@ -102,7 +106,8 @@ namespace HospitalManagement
                 if (reader.Read())
                 {
                     string disease = reader["disease"].ToString();
-                   rtbdisease.Text = disease;
+                   
+                    lbldeasesse.Text = disease;
                     disease_pat = disease;
                 }
             }
@@ -122,6 +127,11 @@ namespace HospitalManagement
             parentPanel.Controls.Add(treat);
             treat.Show();
             //MessageBox.Show(did.ToString());
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

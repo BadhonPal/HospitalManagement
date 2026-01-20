@@ -47,6 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="doctorprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="doctorprofile.Designer.cs">
+      <DependentUpon>doctorprofile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +71,12 @@
     </Compile>
     <Compile Include="nahid.Designer.cs">
       <DependentUpon>nahid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oldPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oldPatient.Designer.cs">
+      <DependentUpon>oldPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,11 +92,20 @@
     <Compile Include="waitting.Designer.cs">
       <DependentUpon>waitting.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="doctorprofile.resx">
+      <DependentUpon>doctorprofile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="nahid.resx">
       <DependentUpon>nahid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oldPatient.resx">
+      <DependentUpon>oldPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,6 +144,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1027650.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d-doctor-profile-icon-white-background-stylized-d-profile-icon-doctor-set-against-pure-white-background-featuring-378081114.jpg-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icontexto-message-types-wait-red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14244649.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient_engagement_healthcare_data_management_monotone_icon_in_powerpoint_pptx_png_and_editable_eps_format_slide01_cropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-render-man-doctor-avatar-round-sticker-with-cartoon-character-face-user-id-thumbnail-modern_1181551-95.jpg_cropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dollar-banknotes-isolate-white-background_1127111-286.jpg_cropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed-2_cropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hourglass-icon-3d-rendering-illustration-260nw-2537649629.jpg_cropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data-visualization-dashboard-kpi-widgets-600nw-2667801237.jpg_cropped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20713709-illustrazione-vettore-grafico-di-disconnettersi-icona-uscita-icon-eps-gratuito-vettoriale_cropped.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
