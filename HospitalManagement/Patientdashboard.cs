@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,41 @@ namespace HospitalManagement
 {
     public partial class Patientdashboard : Form
     {
+
+        void getDoctorcount()
+        {
+
+            string query = "SELECT COUNT(*) FROM Doctor";
+
+            using (SqlConnection con = new SqlConnection(aurpita.constring))
+            {
+                SqlCommand cmd = new SqlCommand(query, con);
+                con.Open();
+
+                lblDcount.Text = cmd.ExecuteScalar().ToString();
+            }
+        }
+
+
+        void getappointmentcount()
+        {
+
+            string query = "SELECT COUNT(*) FROM Book";
+
+            using (SqlConnection con = new SqlConnection(aurpita.constring))
+            {
+                SqlCommand cmd = new SqlCommand(query, con);
+                con.Open();
+
+                lblAcount.Text = cmd.ExecuteScalar().ToString();
+            }
+        }
         public Patientdashboard()
         {
             InitializeComponent();
+            getDoctorcount();
+
+            getappointmentcount();
         }
         int pid;
         public Patientdashboard(int id)
@@ -22,7 +55,12 @@ namespace HospitalManagement
             pid = id;
             
             InitializeComponent();
+            getappointmentcount();
+            getDoctorcount();
+
+
         }
+        
 
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -67,7 +105,7 @@ namespace HospitalManagement
         {
             panel2.Controls.Clear(); // remove previous page
 
-            viewappoint wait = new viewappoint(pid); // child form
+            viewappoint wait = new viewappoint(pid,panel2); // child form
             wait.TopLevel = false;               // IMPORTANT
             wait.FormBorderStyle = FormBorderStyle.None;
             wait.Dock = DockStyle.Fill;
@@ -111,13 +149,33 @@ namespace HospitalManagement
         {
             panel2.Controls.Clear(); // remove previous page
 
-           payment wait1 = new payment(); // child form
+           payment wait1 = new payment(pid); // child form
             wait1.TopLevel = false;               // IMPORTANT
             wait1.FormBorderStyle = FormBorderStyle.None;
             wait1.Dock = DockStyle.Fill;
 
             panel2.Controls.Add(wait1);
             wait1.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbldashboard_Click(object sender, EventArgs e)
+        {
+            Patientdashboard ad = new Patientdashboard(pid);
+
+            ad.Show();
+
+            this.Hide();
+
+        }
+
+        private void lblcount_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }

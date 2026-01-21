@@ -86,32 +86,79 @@ dataGridView1.Rows[e.RowIndex]
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(aurpita.constring))
+            if (textBox1.Text == "" || did == 0) { MessageBox.Show("Enter  disease  name and Select Doctor!"); }
+            else
             {
-                con.Open();
-                
-                
 
-                string query = @"INSERT INTO [book] 
-(patient_id,doctor_id,status,disease)
-VALUES (@patient_id,@doctor_id,@status,@disease)";
-
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@patient_id", p_id);
-                cmd.Parameters.AddWithValue("@doctor_id", did);
-                cmd.Parameters.AddWithValue("@status", "pending");
-                cmd.Parameters.AddWithValue("@disease", textBox1.Text);
+                using (SqlConnection con = new SqlConnection(aurpita.constring))
+                {
+                    con.Open();
 
 
 
+                    string query = @"INSERT INTO [book] 
+(patient_id,doctor_id,status,disease,date)
+VALUES (@patient_id,@doctor_id,@status,@disease,@date)";
 
-                cmd.ExecuteNonQuery();
+                    string date = DateTime.Now.ToString("yyyy-MM-dd");
 
-                MessageBox.Show("appointment confirmed");
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@patient_id", p_id);
+                    cmd.Parameters.AddWithValue("@doctor_id", did);
+                    cmd.Parameters.AddWithValue("@status", "pending");
+                    cmd.Parameters.AddWithValue("@disease", textBox1.Text);
+                    cmd.Parameters.AddWithValue("@date", date);
 
 
+
+
+                    cmd.ExecuteNonQuery();
+
+                   // MessageBox.Show("appointment confirmed");
+
+
+                }
+                using (SqlConnection con = new SqlConnection(aurpita.constring))
+                {
+                    con.Open();
+
+
+
+                    string query = @"INSERT INTO [bill] 
+(patient_id,doctor_id,status,amount)
+VALUES (@patient_id,@doctor_id,@status,@amo)";
+
+                   
+
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    cmd.Parameters.AddWithValue("@patient_id", p_id);
+                    cmd.Parameters.AddWithValue("@doctor_id", did);
+                    cmd.Parameters.AddWithValue("@status", "pending");
+                    cmd.Parameters.AddWithValue("@amo", 300);
+
+
+
+
+
+                    cmd.ExecuteNonQuery();
+
+                   
+
+
+                }
+                MessageBox.Show("Appointment Confirmed");
             }
+
+
+
+
+
+
+
+
+
+        }
 
         }
     }
-}
+

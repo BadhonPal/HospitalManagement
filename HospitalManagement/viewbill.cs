@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace HospitalManagement
 {
-    public partial class prescription : Form
+    public partial class viewbill : Form
     {
-        public prescription()
+        public viewbill()
         {
             InitializeComponent();
-        }
-
-        private void prescription_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

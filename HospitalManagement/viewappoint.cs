@@ -54,10 +54,12 @@ SELECT * FROM [book] WHERE patient_id = @p_id";
             }
 
         }
-        public viewappoint(int pid)
+        Panel parent;
+        public viewappoint(int pid,Panel p)
         {
             InitializeComponent();
             p_id = pid;
+            parent = p;
             loadappointment();
         }
 
@@ -68,14 +70,22 @@ SELECT * FROM [book] WHERE patient_id = @p_id";
 
         private void button1_Click(object sender, EventArgs e)
         {
+            parent.Controls.Clear(); // remove previous page
 
+            appointment a = new appointment(p_id); // child form
+            a.TopLevel = false;               // IMPORTANT
+            a.FormBorderStyle = FormBorderStyle.None;
+            a.Dock = DockStyle.Fill;
+
+            parent.Controls.Add(a);
+            a.Show();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             b_id = Convert.ToInt32(
 dataGridView1.Rows[e.RowIndex]
-                .Cells["doctor_id"]
+                .Cells["book_id"]
                 .Value);
         }
 
@@ -103,6 +113,11 @@ dataGridView1.Rows[e.RowIndex]
 
 
             }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

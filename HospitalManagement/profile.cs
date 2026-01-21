@@ -26,7 +26,7 @@ namespace HospitalManagement
 
                 string query = @"SELECT *
               FROM [patient]
-              WHERE patient_id = 5";
+              WHERE patient_id = @p_id";
 
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue("@p_id", pid);
@@ -75,7 +75,7 @@ namespace HospitalManagement
         public profile()
         {
             InitializeComponent();
-            showpretientinfo(1);
+            showpretientinfo(p_id);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -119,13 +119,23 @@ WHERE patient_id=@patient_id";
 
                 cmd.ExecuteNonQuery();
 
-                MessageBox.Show(" Successfully updated!");
+                MessageBox.Show(" Successfully Updated!!");
 
 
             }
         }
 
         private void profile_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblname_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblage_Click(object sender, EventArgs e)
         {
 
         }
