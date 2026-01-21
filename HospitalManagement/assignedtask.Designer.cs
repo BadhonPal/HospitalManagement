@@ -40,7 +40,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SpringGreen;
-            this.panel1.BackgroundImage = global::HospitalManagement.Properties.Resources.task2;
+           
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.button2);

@@ -166,7 +166,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.BackgroundImage = global::HospitalManagement.Properties.Resources.adminBackground;
+          
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel5);
@@ -282,7 +282,7 @@
             // pictureBox5
             // 
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Image = global::HospitalManagement.Properties.Resources.payment2;
+            
             this.pictureBox5.Location = new System.Drawing.Point(25, 413);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(40, 36);
@@ -293,7 +293,7 @@
             // pictureBox4
             // 
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Image = global::HospitalManagement.Properties.Resources.WhatsApp_Image_2026_01_20_at_1_08_07_AM;
+            
             this.pictureBox4.Location = new System.Drawing.Point(26, 341);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(39, 36);
@@ -303,7 +303,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::HospitalManagement.Properties.Resources.patient;
+            
             this.pictureBox3.Location = new System.Drawing.Point(26, 263);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(39, 37);
@@ -313,7 +313,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::HospitalManagement.Properties.Resources.doctor;
+           
             this.pictureBox2.Location = new System.Drawing.Point(26, 188);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(39, 45);
@@ -323,7 +323,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::HospitalManagement.Properties.Resources.admin;
+           
             this.pictureBox1.Location = new System.Drawing.Point(12, 60);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(75, 77);

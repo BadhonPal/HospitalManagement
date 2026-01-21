@@ -45,15 +45,7 @@ namespace HospitalManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            panelfill.Controls.Clear(); // remove previous page
-
-            Form1 ordersForm = new Form1(); // child form
-            ordersForm.TopLevel = false;               // IMPORTANT
-            ordersForm.FormBorderStyle = FormBorderStyle.None;
-            ordersForm.Dock = DockStyle.Fill;
-
-            panelfill.Controls.Add(ordersForm);
-            ordersForm.Show();
+          
 
             
         }

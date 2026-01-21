@@ -8,6 +8,6 @@ namespace HospitalManagement
 {
     public static class aurpita
     {
-      public static  string constring = "server=DESKTOP-IBGVO76\\SQLEXPRESS;Database=HMS;Trusted_connection=True;TrustServerCertificate=True;";
+      public static  string constring = "server=Badhon\\SQLEXPRESS;Database=HMS;Trusted_connection=True;TrustServerCertificate=True;";
     }
 }

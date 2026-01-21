@@ -45,7 +45,7 @@
             this.lbldamount.AutoSize = true;
             this.lbldamount.BackColor = System.Drawing.Color.SkyBlue;
             this.lbldamount.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldamount.Location = new System.Drawing.Point(122, 379);
+            this.lbldamount.Location = new System.Drawing.Point(347, 426);
             this.lbldamount.Name = "lbldamount";
             this.lbldamount.Size = new System.Drawing.Size(131, 25);
             this.lbldamount.TabIndex = 3;
@@ -53,7 +53,7 @@
             // 
             // textdue
             // 
-            this.textdue.Location = new System.Drawing.Point(287, 378);
+            this.textdue.Location = new System.Drawing.Point(509, 427);
             this.textdue.Name = "textdue";
             this.textdue.Size = new System.Drawing.Size(121, 26);
             this.textdue.TabIndex = 7;
@@ -63,7 +63,7 @@
             this.lblatopay.AutoSize = true;
             this.lblatopay.BackColor = System.Drawing.Color.SkyBlue;
             this.lblatopay.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblatopay.Location = new System.Drawing.Point(92, 441);
+            this.lblatopay.Location = new System.Drawing.Point(317, 476);
             this.lblatopay.Name = "lblatopay";
             this.lblatopay.Size = new System.Drawing.Size(161, 25);
             this.lblatopay.TabIndex = 8;
@@ -71,7 +71,7 @@
             // 
             // textamounttopay
             // 
-            this.textamounttopay.Location = new System.Drawing.Point(287, 442);
+            this.textamounttopay.Location = new System.Drawing.Point(509, 477);
             this.textamounttopay.Name = "textamounttopay";
             this.textamounttopay.Size = new System.Drawing.Size(121, 26);
             this.textamounttopay.TabIndex = 12;
@@ -80,7 +80,7 @@
             // 
             this.btconfirm.BackColor = System.Drawing.Color.Teal;
             this.btconfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btconfirm.Location = new System.Drawing.Point(152, 498);
+            this.btconfirm.Location = new System.Drawing.Point(369, 540);
             this.btconfirm.Name = "btconfirm";
             this.btconfirm.Size = new System.Drawing.Size(223, 45);
             this.btconfirm.TabIndex = 13;
@@ -93,7 +93,7 @@
             this.lblpid.AutoSize = true;
             this.lblpid.BackColor = System.Drawing.Color.SkyBlue;
             this.lblpid.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpid.Location = new System.Drawing.Point(147, 320);
+            this.lblpid.Location = new System.Drawing.Point(372, 372);
             this.lblpid.Name = "lblpid";
             this.lblpid.Size = new System.Drawing.Size(106, 25);
             this.lblpid.TabIndex = 14;
@@ -102,16 +102,16 @@
             // txtid
             // 
             this.txtid.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtid.Location = new System.Drawing.Point(287, 321);
+            this.txtid.Location = new System.Drawing.Point(509, 372);
             this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(100, 26);
+            this.txtid.Size = new System.Drawing.Size(121, 26);
             this.txtid.TabIndex = 15;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.button1.Font = new System.Drawing.Font("Palace Script MT", 28F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(190, 27);
+            this.button1.Location = new System.Drawing.Point(180, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(185, 70);
             this.button1.TabIndex = 16;
@@ -121,11 +121,11 @@
             // dgvbill
             // 
             this.dgvbill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvbill.Location = new System.Drawing.Point(75, 103);
+            this.dgvbill.Location = new System.Drawing.Point(42, 107);
             this.dgvbill.Name = "dgvbill";
             this.dgvbill.RowHeadersWidth = 62;
             this.dgvbill.RowTemplate.Height = 28;
-            this.dgvbill.Size = new System.Drawing.Size(417, 197);
+            this.dgvbill.Size = new System.Drawing.Size(436, 219);
             this.dgvbill.TabIndex = 17;
             this.dgvbill.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvbill_CellClick);
             // 
@@ -133,9 +133,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::HospitalManagement.Properties.Resources.Media__24_;
+            
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(540, 597);
+            this.ClientSize = new System.Drawing.Size(884, 597);
             this.Controls.Add(this.dgvbill);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtid);

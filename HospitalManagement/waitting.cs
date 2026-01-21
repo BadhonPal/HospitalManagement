@@ -16,14 +16,14 @@ namespace HospitalManagement
     {
         int patientId;
         String disease_pat;
-        string constring = "server=localhost;Database=HMS;Trusted_connection=True;TrustServerCertificate=True;";
+        
 
         
         private void LoadPatientsByDoctorFromAppointment(int doctorId)
         {
-            string constring = "server=localhost;Database=HMS;Trusted_connection=True;TrustServerCertificate=True;";
+            
 
-            using (SqlConnection con = new SqlConnection(constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 con.Open();
 
@@ -91,7 +91,7 @@ namespace HospitalManagement
                         .Value
     );
             patientId = pid;
-            using (SqlConnection con = new SqlConnection(constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 con.Open();
 

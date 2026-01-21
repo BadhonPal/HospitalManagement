@@ -118,7 +118,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackgroundImage = global::HospitalManagement.Properties.Resources.hospital;
+           
             this.panel2.Controls.Add(this.chart1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.panel5);
@@ -221,7 +221,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::HospitalManagement.Properties.Resources.nurse;
+           
             this.pictureBox1.Location = new System.Drawing.Point(59, 39);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(83, 87);

@@ -96,7 +96,7 @@
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = global::HospitalManagement.Properties.Resources.Media__16_1;
+           
             this.pictureBox7.Location = new System.Drawing.Point(24, 210);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(33, 23);
@@ -117,7 +117,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = global::HospitalManagement.Properties.Resources.Media__15_2;
+            
             this.pictureBox6.Location = new System.Drawing.Point(23, 516);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(27, 22);
@@ -127,7 +127,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Image = global::HospitalManagement.Properties.Resources.Media__14_;
+          
             this.pictureBox5.Location = new System.Drawing.Point(23, 456);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(27, 21);
@@ -137,7 +137,7 @@
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Image = global::HospitalManagement.Properties.Resources.Media__13_1;
+            
             this.pictureBox4.Location = new System.Drawing.Point(24, 393);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(28, 25);
@@ -147,7 +147,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::HospitalManagement.Properties.Resources.Media__12_1;
+            
             this.pictureBox3.Location = new System.Drawing.Point(24, 326);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(29, 24);
@@ -157,7 +157,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::HospitalManagement.Properties.Resources.Media__11_;
+           
             this.pictureBox2.Location = new System.Drawing.Point(24, 269);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(29, 25);
@@ -179,7 +179,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::HospitalManagement.Properties.Resources.Media__10_;
+           
             this.pictureBox1.Location = new System.Drawing.Point(63, 44);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(114, 104);
@@ -251,7 +251,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(247, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(743, 629);
+            this.panel2.Size = new System.Drawing.Size(811, 629);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -322,11 +322,10 @@
             this.lbldrcount.Text = "Doctor Count";
             // 
             // pictureBox8
-            // 
-            this.pictureBox8.Image = global::HospitalManagement.Properties.Resources.Media__17_;
+            
             this.pictureBox8.Location = new System.Drawing.Point(20, 3);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(720, 629);
+            this.pictureBox8.Size = new System.Drawing.Size(791, 629);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 1;
             this.pictureBox8.TabStop = false;
@@ -344,7 +343,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(990, 629);
+            this.ClientSize = new System.Drawing.Size(1058, 629);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

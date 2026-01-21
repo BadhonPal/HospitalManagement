@@ -70,10 +70,10 @@ SELECT * FROM [book] WHERE patient_id = @p_id";
 
         private void button1_Click(object sender, EventArgs e)
         {
-            parent.Controls.Clear(); // remove previous page
+            parent.Controls.Clear(); 
 
-            appointment a = new appointment(p_id); // child form
-            a.TopLevel = false;               // IMPORTANT
+            appointment a = new appointment(p_id); 
+            a.TopLevel = false;               
             a.FormBorderStyle = FormBorderStyle.None;
             a.Dock = DockStyle.Fill;
 
@@ -108,7 +108,7 @@ dataGridView1.Rows[e.RowIndex]
 
                 cmd.ExecuteNonQuery();
 
-                MessageBox.Show("delete Successfully!");
+                MessageBox.Show("Delete Successfully!");
                 loadappointment();
 
 
