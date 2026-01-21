@@ -53,7 +53,26 @@
     <Compile Include="admindashboard.Designer.cs">
       <DependentUpon>admindashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="assignedtask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="assignedtask.Designer.cs">
+      <DependentUpon>assignedtask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aurpita.cs" />
     <Compile Include="badhon.cs" />
+    <Compile Include="bedlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bedlist.Designer.cs">
+      <DependentUpon>bedlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="billpay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="billpay.Designer.cs">
+      <DependentUpon>billpay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
@@ -86,6 +105,12 @@
     <Compile Include="nahid.Designer.cs">
       <DependentUpon>nahid.cs</DependentUpon>
     </Compile>
+    <Compile Include="nursedashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nursedashboard.Designer.cs">
+      <DependentUpon>nursedashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="NurseRg.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +129,13 @@
     <Compile Include="payBill.Designer.cs">
       <DependentUpon>payBill.cs</DependentUpon>
     </Compile>
+    <Compile Include="patientdetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patientdetails.Designer.cs">
+      <DependentUpon>patientdetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="majhar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Treatment.cs">
@@ -139,6 +171,15 @@
     <EmbeddedResource Include="admindashboard.resx">
       <DependentUpon>admindashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="assignedtask.resx">
+      <DependentUpon>assignedtask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bedlist.resx">
+      <DependentUpon>bedlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="billpay.resx">
+      <DependentUpon>billpay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +195,9 @@
     <EmbeddedResource Include="nahid.resx">
       <DependentUpon>nahid.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="nursedashboard.resx">
+      <DependentUpon>nursedashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NurseRg.resx">
       <DependentUpon>NurseRg.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +206,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="payBill.resx">
       <DependentUpon>payBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="patientdetails.resx">
+      <DependentUpon>patientdetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
