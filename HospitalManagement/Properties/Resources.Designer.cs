@@ -66,6 +66,9 @@ namespace HospitalManagement.Properties {
         internal static System.Drawing.Bitmap bed {
             get {
                 object obj = ResourceManager.GetObject("bed", resourceCulture);
+        internal static System.Drawing.Bitmap Media__10_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (10)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -76,6 +79,9 @@ namespace HospitalManagement.Properties {
         internal static System.Drawing.Bitmap hospital {
             get {
                 object obj = ResourceManager.GetObject("hospital", resourceCulture);
+        internal static System.Drawing.Bitmap Media__11_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (11)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -86,6 +92,9 @@ namespace HospitalManagement.Properties {
         internal static System.Drawing.Bitmap nurse {
             get {
                 object obj = ResourceManager.GetObject("nurse", resourceCulture);
+        internal static System.Drawing.Bitmap Media__12_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (12)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +105,9 @@ namespace HospitalManagement.Properties {
         internal static System.Drawing.Bitmap patient {
             get {
                 object obj = ResourceManager.GetObject("patient", resourceCulture);
+        internal static System.Drawing.Bitmap Media__12_1 {
+            get {
+                object obj = ResourceManager.GetObject("Media (12)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -106,6 +118,9 @@ namespace HospitalManagement.Properties {
         internal static System.Drawing.Bitmap task {
             get {
                 object obj = ResourceManager.GetObject("task", resourceCulture);
+        internal static System.Drawing.Bitmap Media__13_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (13)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +131,9 @@ namespace HospitalManagement.Properties {
         internal static System.Drawing.Bitmap task2 {
             get {
                 object obj = ResourceManager.GetObject("task2", resourceCulture);
+        internal static System.Drawing.Bitmap Media__13_1 {
+            get {
+                object obj = ResourceManager.GetObject("Media (13)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +144,139 @@ namespace HospitalManagement.Properties {
         internal static System.Drawing.Bitmap Two_Function_Manual_Hospital_Bed_TH_A01_II_1200x1200 {
             get {
                 object obj = ResourceManager.GetObject("Two-Function-Manual-Hospital-Bed-TH-A01-II-1200x1200", resourceCulture);
+        internal static System.Drawing.Bitmap Media__14_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (14)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media__15_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (15)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media__15_1 {
+            get {
+                object obj = ResourceManager.GetObject("Media (15)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media__15_2 {
+            get {
+                object obj = ResourceManager.GetObject("Media (15)2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media__15_3 {
+            get {
+                object obj = ResourceManager.GetObject("Media (15)3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media__16_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (16)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media__16_1 {
+            get {
+                object obj = ResourceManager.GetObject("Media (16)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media__17_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (17)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media__18_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (18)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media__19_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (19)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media__20_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (20)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media__22_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (22)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media__24_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (24)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Media__25_ {
+            get {
+                object obj = ResourceManager.GetObject("Media (25)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
