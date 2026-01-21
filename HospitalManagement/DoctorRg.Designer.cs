@@ -37,7 +37,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtid = new System.Windows.Forms.TextBox();
+            this.txtusername = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.txtage = new System.Windows.Forms.TextBox();
@@ -84,9 +84,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(58, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 20);
+            this.label1.Size = new System.Drawing.Size(118, 20);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Doctor id  :";
+            this.label1.Text = "User name  :";
             // 
             // label2
             // 
@@ -149,13 +149,13 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Specialist :";
             // 
-            // txtid
+            // txtusername
             // 
-            this.txtid.Location = new System.Drawing.Point(181, 27);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(133, 22);
-            this.txtid.TabIndex = 19;
-            this.txtid.TextChanged += new System.EventHandler(this.txtid_TextChanged);
+            this.txtusername.Location = new System.Drawing.Point(181, 27);
+            this.txtusername.Name = "txtusername";
+            this.txtusername.Size = new System.Drawing.Size(133, 22);
+            this.txtusername.TabIndex = 19;
+            this.txtusername.TextChanged += new System.EventHandler(this.txtid_TextChanged);
             // 
             // txtname
             // 
@@ -286,7 +286,7 @@
             this.Controls.Add(this.txtage);
             this.Controls.Add(this.txtemail);
             this.Controls.Add(this.txtname);
-            this.Controls.Add(this.txtid);
+            this.Controls.Add(this.txtusername);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -314,7 +314,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.TextBox txtusername;
         private System.Windows.Forms.TextBox txtname;
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.TextBox txtage;

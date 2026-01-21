@@ -14,7 +14,7 @@ namespace HospitalManagement
 {
     public partial class DoctorRg : Form
     {
-
+        int u_id;
         string qua;
         public DoctorRg()
         {
@@ -53,7 +53,29 @@ namespace HospitalManagement
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            
+            using (SqlConnection con = new SqlConnection(badhon.constring))
+            {
+                con.Open();
+
+
+                string query = $"INSERT INTO [user] (username,password,role) VALUES (@uname,@pass,@role); SELECT SCOPE_IDENTITY();";
+
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+
+                    cmd.Parameters.AddWithValue("@uname", txtusername.Text);
+                    cmd.Parameters.AddWithValue("@pass", txtpassword.Text);
+                    cmd.Parameters.AddWithValue("@role", "doctor");
+
+
+
+                    u_id = Convert.ToInt32(cmd.ExecuteScalar());
+
+                }
+            }
+
+
+
             using (SqlConnection con = new SqlConnection(badhon.constring))
             {
                 string gen;
@@ -75,7 +97,7 @@ namespace HospitalManagement
                 {
 
                     con.Open();
-                    int did = Convert.ToInt32(txtid.Text);
+                    
                     int age = Convert.ToInt32(txtage.Text);
 
                     if (cbmbbs.Checked)
@@ -99,7 +121,7 @@ VALUES (@doctor_id, @name, @mail, @age, @gender, @qual, @avail, @spec)";
 
                     SqlCommand cmd = new SqlCommand(query, con);
 
-                    cmd.Parameters.AddWithValue("@doctor_id", did);
+                    cmd.Parameters.AddWithValue("@doctor_id", u_id);
                     cmd.Parameters.AddWithValue("@name", txtname.Text);
                     cmd.Parameters.AddWithValue("@mail", txtemail.Text);
                     cmd.Parameters.AddWithValue("@age", age);
@@ -117,7 +139,7 @@ VALUES (@doctor_id, @name, @mail, @age, @gender, @qual, @avail, @spec)";
 
         private void btnclear_Click(object sender, EventArgs e)
         {
-            txtid.Text = "";
+            txtusername.Text = "";
             txtname.Text = "";
             txtemail.Text = "";
             txtage.Text = "";

@@ -14,6 +14,7 @@ namespace HospitalManagement
 {
     public partial class NurseRg : Form
     {
+        int u_id;
         public NurseRg()
         {
             InitializeComponent();
@@ -26,7 +27,35 @@ namespace HospitalManagement
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-           
+            using (SqlConnection con = new SqlConnection(badhon.constring))
+
+            {
+
+                con.Open();
+
+
+                string query = $"INSERT INTO [user] (username,password,role) VALUES (@uname,@pass,@role); SELECT SCOPE_IDENTITY();";
+
+                using (SqlCommand cmd = new SqlCommand(query, con))
+
+                {
+
+
+                    cmd.Parameters.AddWithValue("@uname", txtuname.Text);
+
+                    cmd.Parameters.AddWithValue("@pass", txtpassword.Text);
+
+                    cmd.Parameters.AddWithValue("@role", "nurse");
+
+
+
+                    u_id = Convert.ToInt32(cmd.ExecuteScalar());
+
+                }
+
+            }
+
+
             using (SqlConnection con = new SqlConnection(badhon.constring))
             {
                 string gen;
@@ -51,7 +80,7 @@ namespace HospitalManagement
                 else
                 {
                     con.Open();
-                    int nid = Convert.ToInt32(txtid.Text);
+                   
                     int age = Convert.ToInt32(txtage.Text);
 
 
@@ -61,7 +90,7 @@ VALUES (@nurse_id, @name, @mail, @age, @gender, @address )";
 
                     SqlCommand cmd = new SqlCommand(query, con);
 
-                    cmd.Parameters.AddWithValue("@nurse_id", nid);
+                    cmd.Parameters.AddWithValue("@nurse_id", u_id);
                     cmd.Parameters.AddWithValue("@name", txtname.Text);
                     cmd.Parameters.AddWithValue("@mail", txtemail.Text);
                     cmd.Parameters.AddWithValue("@age", age);
@@ -85,7 +114,7 @@ VALUES (@nurse_id, @name, @mail, @age, @gender, @address )";
         private void btnclear_Click(object sender, EventArgs e)
         {
            
-            txtid.Text="";
+            //txtid.Text="";
             txtname.Text="";
             txtemail.Text = "";
             txtage.Text = "";
@@ -97,6 +126,11 @@ VALUES (@nurse_id, @name, @mail, @age, @gender, @address )";
        }
 
         private void rcbaddresss_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
         {
 
         }
