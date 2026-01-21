@@ -47,65 +47,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="appointment.cs">
+    <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="appointment.Designer.cs">
-      <DependentUpon>appointment.cs</DependentUpon>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="aurpita.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="doctorprofile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="doctorprofile.Designer.cs">
+      <DependentUpon>doctorprofile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Patientdashboard.cs">
+    <Compile Include="Global.cs" />
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Patientdashboard.Designer.cs">
-      <DependentUpon>Patientdashboard.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="payment.cs">
+    <Compile Include="nahid.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="payment.Designer.cs">
-      <DependentUpon>payment.cs</DependentUpon>
+    <Compile Include="nahid.Designer.cs">
+      <DependentUpon>nahid.cs</DependentUpon>
     </Compile>
-    <Compile Include="profile.cs">
+    <Compile Include="oldPatient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="profile.Designer.cs">
-      <DependentUpon>profile.cs</DependentUpon>
+    <Compile Include="oldPatient.Designer.cs">
+      <DependentUpon>oldPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="registration.cs">
+    <Compile Include="Treatment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="registration.Designer.cs">
-      <DependentUpon>registration.cs</DependentUpon>
+    <Compile Include="Treatment.Designer.cs">
+      <DependentUpon>Treatment.cs</DependentUpon>
     </Compile>
-    <Compile Include="viewappoint.cs">
+    <Compile Include="waitting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="viewappoint.Designer.cs">
-      <DependentUpon>viewappoint.cs</DependentUpon>
+    <Compile Include="waitting.Designer.cs">
+      <DependentUpon>waitting.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="appointment.resx">
-      <DependentUpon>appointment.cs</DependentUpon>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="doctorprofile.resx">
+      <DependentUpon>doctorprofile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Patientdashboard.resx">
-      <DependentUpon>Patientdashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="payment.resx">
-      <DependentUpon>payment.cs</DependentUpon>
+    <EmbeddedResource Include="nahid.resx">
+      <DependentUpon>nahid.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="profile.resx">
-      <DependentUpon>profile.cs</DependentUpon>
+    <EmbeddedResource Include="oldPatient.resx">
+      <DependentUpon>oldPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,11 +117,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="registration.resx">
-      <DependentUpon>registration.cs</DependentUpon>
+    <EmbeddedResource Include="Treatment.resx">
+      <DependentUpon>Treatment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="viewappoint.resx">
-      <DependentUpon>viewappoint.cs</DependentUpon>
+    <EmbeddedResource Include="waitting.resx">
+      <DependentUpon>waitting.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -137,64 +137,55 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2810%29.jpeg" />
+    <None Include="Resources\561776-200.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2811%29.jpeg" />
+    <None Include="Resources\images-2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2812%29.jpeg" />
+    <None Include="Resources\1027650.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2812%291.jpeg" />
+    <None Include="Resources\d-doctor-profile-icon-white-background-stylized-d-profile-icon-doctor-set-against-pure-white-background-featuring-378081114.jpg-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2813%29.jpeg" />
+    <None Include="Resources\icontexto-message-types-wait-red.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2813%291.jpeg" />
+    <None Include="Resources\14244649.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2814%29.jpeg" />
+    <None Include="Resources\patient_engagement_healthcare_data_management_monotone_icon_in_powerpoint_pptx_png_and_editable_eps_format_slide01_cropped.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2815%29.jpeg" />
+    <None Include="Resources\3d-render-man-doctor-avatar-round-sticker-with-cartoon-character-face-user-id-thumbnail-modern_1181551-95.jpg_cropped.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2815%291.jpeg" />
+    <None Include="Resources\dollar-banknotes-isolate-white-background_1127111-286.jpg_cropped.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2815%292.jpeg" />
+    <None Include="Resources\unnamed-2_cropped.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2816%29.jpeg" />
+    <None Include="Resources\hourglass-icon-3d-rendering-illustration-260nw-2537649629.jpg_cropped.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2816%291.jpeg" />
+    <None Include="Resources\data-visualization-dashboard-kpi-widgets-600nw-2667801237.jpg_cropped.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2815%293.jpeg" />
+    <None Include="Resources\20713709-illustrazione-vettore-grafico-di-disconnettersi-icona-uscita-icon-eps-gratuito-vettoriale_cropped.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2817%29.jpeg" />
+    <None Include="Resources\medicallogo nahid.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2818%29.jpeg" />
+    <None Include="Resources\Screenshot_2026-01-21_at_1.03.46_AM-removebg-preview.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2819%29.jpeg" />
+    <None Include="Resources\doctorlogin [Converted].png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Media %2820%29.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Media %2822%29.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Media %2824%29.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Media %2825%29.jpeg" />
+    <None Include="Resources\nahidprofilr.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
