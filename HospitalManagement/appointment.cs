@@ -20,9 +20,9 @@ namespace HospitalManagement
 
         {
 
-            string constring = "server=DESKTOP-IBGVO76\\SQLEXPRESS;Database=HMS;Trusted_connection=True;TrustServerCertificate=True;";
+           
 
-            using (SqlConnection con = new SqlConnection(constring))
+            using (SqlConnection con = new SqlConnection(aurpita.constring))
 
             {
 

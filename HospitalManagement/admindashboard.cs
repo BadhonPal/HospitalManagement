@@ -96,7 +96,9 @@ namespace HospitalManagement
 
         private void label1_Click_1(object sender, EventArgs e)
         {
-
+            Login li = new Login();
+            li.Show();
+            this.Hide();
         }
 
         private void chart1_Click(object sender, EventArgs e)

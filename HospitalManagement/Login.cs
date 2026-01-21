@@ -72,6 +72,21 @@ namespace HospitalManagement
 
 
 
+                            } else if (dbRole == "admin") {
+
+                                admindashboard ad = new admindashboard();
+                                ad.Show();
+                                this.Hide();
+                            } else if (dbRole=="patient") {
+                                Patientdashboard pd = new Patientdashboard(did);
+                                pd.Show();
+                                this.Hide();
+                            }
+                             else if (dbRole == "nurse")
+                            {
+                                nursedashboard nd = new nursedashboard(did);
+                                nd.Show();
+                                this.Hide();
                             }
 
 
@@ -111,6 +126,18 @@ namespace HospitalManagement
                 lblemptypass.Visible = false;
             }
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            registration reg = new registration();
+            reg.Show();
+            this.Hide();
         }
     }
 }

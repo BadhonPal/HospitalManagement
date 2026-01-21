@@ -33,10 +33,13 @@
             this.btntreatment = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbltop = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbldeasesse = new System.Windows.Forms.Label();
+            this.dgvdoctorview = new System.Windows.Forms.DataGridView();
+            this.lblterminateto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdoctorview)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -83,6 +86,7 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Cancel Apointment";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -95,17 +99,18 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Terminate";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label3
+            // lbltop
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(296, 42);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Watting pretend";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.lbltop.AutoSize = true;
+            this.lbltop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltop.Location = new System.Drawing.Point(19, 20);
+            this.lbltop.Name = "lbltop";
+            this.lbltop.Size = new System.Drawing.Size(296, 42);
+            this.lbltop.TabIndex = 4;
+            this.lbltop.Text = "Watting pretend";
+            this.lbltop.Click += new System.EventHandler(this.label3_Click);
             // 
             // label1
             // 
@@ -128,14 +133,42 @@
             this.lbldeasesse.Text = " ";
             this.lbldeasesse.Click += new System.EventHandler(this.label2_Click);
             // 
+            // dgvdoctorview
+            // 
+            this.dgvdoctorview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvdoctorview.Location = new System.Drawing.Point(22, 83);
+            this.dgvdoctorview.Name = "dgvdoctorview";
+            this.dgvdoctorview.RowHeadersWidth = 82;
+            this.dgvdoctorview.RowTemplate.Height = 33;
+            this.dgvdoctorview.Size = new System.Drawing.Size(756, 533);
+            this.dgvdoctorview.TabIndex = 8;
+            this.dgvdoctorview.Visible = false;
+            this.dgvdoctorview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdoctorview_CellClick);
+            // 
+            // lblterminateto
+            // 
+            this.lblterminateto.BackColor = System.Drawing.Color.Navy;
+            this.lblterminateto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblterminateto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblterminateto.Location = new System.Drawing.Point(654, 636);
+            this.lblterminateto.Name = "lblterminateto";
+            this.lblterminateto.Size = new System.Drawing.Size(417, 77);
+            this.lblterminateto.TabIndex = 9;
+            this.lblterminateto.Text = "Terminate";
+            this.lblterminateto.UseVisualStyleBackColor = false;
+            this.lblterminateto.Visible = false;
+            this.lblterminateto.Click += new System.EventHandler(this.lblterminateto_Click);
+            // 
             // waitting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1137, 743);
+            this.Controls.Add(this.lblterminateto);
+            this.Controls.Add(this.dgvdoctorview);
             this.Controls.Add(this.lbldeasesse);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbltop);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btntreatment);
@@ -144,6 +177,7 @@
             this.Text = "waitting";
             this.Load += new System.EventHandler(this.waitting_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdoctorview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,8 +189,10 @@
         private System.Windows.Forms.Button btntreatment;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbltop;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbldeasesse;
+        private System.Windows.Forms.DataGridView dgvdoctorview;
+        private System.Windows.Forms.Button lblterminateto;
     }
 }

@@ -56,6 +56,9 @@ namespace HospitalManagement
 
                 }
             }
+            Login lg= new Login();
+            lg.Show();
+            this.Hide();
 
 
 

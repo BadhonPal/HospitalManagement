@@ -90,41 +90,41 @@ namespace HospitalManagement
 
         private void lblprofile_Click(object sender, EventArgs e)
         {
-           // panel2.Controls.Clear(); // remove previous page
+            panel2.Controls.Clear(); // remove previous page
 
-           //// profile wait = new profile(5); // child form
-           // wait.TopLevel = false;               // IMPORTANT
-           // wait.FormBorderStyle = FormBorderStyle.None;
-           // wait.Dock = DockStyle.Fill;
+             profile wait = new profile(pid); // child form
+            wait.TopLevel = false;               // IMPORTANT
+            wait.FormBorderStyle = FormBorderStyle.None;
+            wait.Dock = DockStyle.Fill;
 
-           // panel2.Controls.Add(wait);
-           // wait.Show();
+            panel2.Controls.Add(wait);
+            wait.Show();
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-        //    panel2.Controls.Clear(); // remove previous page
+            panel2.Controls.Clear(); // remove previous page
 
-        //    viewappoint wait = new viewappoint(pid,panel2); // child form
-        //    wait.TopLevel = false;               // IMPORTANT
-        //    wait.FormBorderStyle = FormBorderStyle.None;
-        //    wait.Dock = DockStyle.Fill;
+            viewappoint wait = new viewappoint(pid, panel2); // child form
+            wait.TopLevel = false;               // IMPORTANT
+            wait.FormBorderStyle = FormBorderStyle.None;
+            wait.Dock = DockStyle.Fill;
 
-        //    panel2.Controls.Add(wait);
-        //    wait.Show();
+            panel2.Controls.Add(wait);
+            wait.Show();
         }
 
         private void lblappoinment_Click(object sender, EventArgs e)
         {
-            //panel2.Controls.Clear(); // remove previous page
+            panel2.Controls.Clear(); // remove previous page
 
-            //appointment await = new appointment(pid); // child form
-            //await.TopLevel = false;               // IMPORTANT
-            //await.FormBorderStyle = FormBorderStyle.None;
-            //await.Dock = DockStyle.Fill;
+            appointment await = new appointment(pid); // child form
+            await.TopLevel = false;               // IMPORTANT
+            await.FormBorderStyle = FormBorderStyle.None;
+            await.Dock = DockStyle.Fill;
 
-            //panel2.Controls.Add(await);
-            //await.Show();
+            panel2.Controls.Add(await);
+            await.Show();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -134,28 +134,28 @@ namespace HospitalManagement
 
         private void lblpathist_Click(object sender, EventArgs e)
         {
-            //panel2.Controls.Clear(); // remove previous page
+            panel2.Controls.Clear(); // remove previous page
 
-            //prescription wait2 = new prescription(); // child form
-            //wait2.TopLevel = false;               // IMPORTANT
-            //wait2.FormBorderStyle = FormBorderStyle.None;
-            //wait2.Dock = DockStyle.Fill;
+            prescribetion wait2 = new prescribetion(pid); // child form
+            wait2.TopLevel = false;               // IMPORTANT
+            wait2.FormBorderStyle = FormBorderStyle.None;
+            wait2.Dock = DockStyle.Fill;
 
-            //panel2.Controls.Add(wait2);
-            //wait2.Show();
+            panel2.Controls.Add(wait2);
+            wait2.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-        //    panel2.Controls.Clear(); // remove previous page
+            panel2.Controls.Clear(); // remove previous page
 
-        //   payment wait1 = new payment(pid); // child form
-        //    wait1.TopLevel = false;               // IMPORTANT
-        //    wait1.FormBorderStyle = FormBorderStyle.None;
-        //    wait1.Dock = DockStyle.Fill;
+            payment wait1 = new payment(pid); // child form
+            wait1.TopLevel = false;               // IMPORTANT
+            wait1.FormBorderStyle = FormBorderStyle.None;
+            wait1.Dock = DockStyle.Fill;
 
-        //    panel2.Controls.Add(wait1);
-        //    wait1.Show();
+            panel2.Controls.Add(wait1);
+            wait1.Show();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -176,6 +176,13 @@ namespace HospitalManagement
         private void lblcount_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Login li = new Login();
+            li.Show();
+            this.Hide();
         }
     }
     }

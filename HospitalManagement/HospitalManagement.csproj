@@ -154,6 +154,12 @@
     <Compile Include="payment.Designer.cs">
       <DependentUpon>payment.cs</DependentUpon>
     </Compile>
+    <Compile Include="prescribetion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prescribetion.Designer.cs">
+      <DependentUpon>prescribetion.cs</DependentUpon>
+    </Compile>
     <Compile Include="profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,12 @@
     </Compile>
     <Compile Include="registration.Designer.cs">
       <DependentUpon>registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="salary1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="salary1.Designer.cs">
+      <DependentUpon>salary1.cs</DependentUpon>
     </Compile>
     <Compile Include="Treatment.cs">
       <SubType>Form</SubType>
@@ -255,6 +267,9 @@
     <EmbeddedResource Include="payment.resx">
       <DependentUpon>payment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="prescribetion.resx">
+      <DependentUpon>prescribetion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="profile.resx">
       <DependentUpon>profile.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,6 +285,9 @@
     </Compile>
     <EmbeddedResource Include="registration.resx">
       <DependentUpon>registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="salary1.resx">
+      <DependentUpon>salary1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Treatment.resx">
       <DependentUpon>Treatment.cs</DependentUpon>
@@ -385,6 +403,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\adminBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-01-22 at 01.22.51.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-01-22 at 01.23.34.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-01-22 at 01.24.39.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-01-22 at 01.23.19.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-01-22 at 01.26.24.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-01-22 at 01.51.42.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-01-22 at 01.51.43 %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data-visualization-dashboard-kpi-widgets-600nw-2667801237.jpg_cropped1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-01-22 at 01.51.44.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-01-22 at 01.51.43 %282%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-01-22 at 01.51.41 %281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-01-22 at 01.51.41.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

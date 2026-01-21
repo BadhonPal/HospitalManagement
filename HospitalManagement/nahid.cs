@@ -2,22 +2,48 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace HospitalManagement
 {
     public partial class nahid : Form
     {
         int did;
-        void godashboard(int d_id) {
-            panelfill.Controls.Clear(); // remove previous page
+        string name;
+        void getname(int id)
+        {
+            using (SqlConnection con = new SqlConnection(Global.constring))
+            {
+                con.Open();
 
-            dashboard dash = new dashboard(d_id); // child form
-            dash.TopLevel = false;               // IMPORTANT
+
+                string query = $"SELECT name FROM [doctor] WHERE doctor_id=@did";
+
+                using (SqlCommand cmd = new SqlCommand(query, con))
+                {
+
+                    cmd.Parameters.AddWithValue("@did", id);
+
+
+
+                    // cmd.ExecuteNonQuery();
+                    name = cmd.ExecuteScalar().ToString();
+                    lbldoctorname.Text = name;
+
+                }
+            }
+        }
+        void godashboard(int d_id) {
+            panelfill.Controls.Clear(); 
+
+            dashboard dash = new dashboard(d_id);
+            dash.TopLevel = false;              
             dash.FormBorderStyle = FormBorderStyle.None;
             dash.Dock = DockStyle.Fill;
 
@@ -28,6 +54,7 @@ namespace HospitalManagement
             InitializeComponent();
              did=id;
             godashboard(id);
+            getname(id);
 
 
             //MessageBox.Show("Doctor ID: " + did);
@@ -127,6 +154,25 @@ namespace HospitalManagement
 
             panelfill.Controls.Add(op);
             op.Show();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+            panelfill.Controls.Clear(); // remove previous page
+
+            salary1 op = new salary1(did); // child form
+            op.TopLevel = false;               // IMPORTANT
+            op.FormBorderStyle = FormBorderStyle.None;
+            op.Dock = DockStyle.Fill;
+
+            panelfill.Controls.Add(op);
+            op.Show();
+
+        }
+
+        private void panelsidebar_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

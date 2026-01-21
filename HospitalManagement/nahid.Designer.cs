@@ -30,21 +30,21 @@
         {
             this.panelsidebar = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
             this.lbldoctorname = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.lbloldpatient = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelfill = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.lbloldpatient = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelfill = new System.Windows.Forms.Panel();
             this.panelsidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -78,6 +78,7 @@
             this.panelsidebar.Name = "panelsidebar";
             this.panelsidebar.Size = new System.Drawing.Size(330, 805);
             this.panelsidebar.TabIndex = 0;
+            this.panelsidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelsidebar_Paint);
             // 
             // label8
             // 
@@ -89,6 +90,17 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Log Out";
             this.label8.Click += new System.EventHandler(this.label8_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox7.Image = global::HospitalManagement.Properties.Resources.data_visualization_dashboard_kpi_widgets_600nw_2667801237_jpg_cropped;
+            this.pictureBox7.Location = new System.Drawing.Point(32, 311);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(60, 52);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 16;
+            this.pictureBox7.TabStop = false;
             // 
             // label11
             // 
@@ -120,69 +132,6 @@
             this.label10.Size = new System.Drawing.Size(96, 51);
             this.label10.TabIndex = 13;
             this.label10.Text = "Dr. ";
-            // 
-            // lbloldpatient
-            // 
-            this.lbloldpatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbloldpatient.ForeColor = System.Drawing.Color.White;
-            this.lbloldpatient.Location = new System.Drawing.Point(95, 465);
-            this.lbloldpatient.Name = "lbloldpatient";
-            this.lbloldpatient.Size = new System.Drawing.Size(291, 51);
-            this.lbloldpatient.TabIndex = 7;
-            this.lbloldpatient.Text = "Old Patient";
-            this.lbloldpatient.Click += new System.EventHandler(this.lbloldpatient_Click);
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Snow;
-            this.label7.Location = new System.Drawing.Point(95, 542);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(187, 51);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Salary";
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(95, 616);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(187, 51);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Profile";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(95, 393);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 51);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Waitting";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // panelfill
-            // 
-            this.panelfill.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelfill.Location = new System.Drawing.Point(330, 0);
-            this.panelfill.Name = "panelfill";
-            this.panelfill.Size = new System.Drawing.Size(1125, 805);
-            this.panelfill.TabIndex = 1;
-            this.panelfill.Paint += new System.Windows.Forms.PaintEventHandler(this.panelfill_Paint);
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = global::HospitalManagement.Properties.Resources.data_visualization_dashboard_kpi_widgets_600nw_2667801237_jpg_cropped;
-            this.pictureBox7.Location = new System.Drawing.Point(32, 311);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(60, 52);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 16;
-            this.pictureBox7.TabStop = false;
             // 
             // pictureBox6
             // 
@@ -228,6 +177,39 @@
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
             // 
+            // lbloldpatient
+            // 
+            this.lbloldpatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbloldpatient.ForeColor = System.Drawing.Color.White;
+            this.lbloldpatient.Location = new System.Drawing.Point(95, 465);
+            this.lbloldpatient.Name = "lbloldpatient";
+            this.lbloldpatient.Size = new System.Drawing.Size(291, 51);
+            this.lbloldpatient.TabIndex = 7;
+            this.lbloldpatient.Text = "Old Patient";
+            this.lbloldpatient.Click += new System.EventHandler(this.lbloldpatient_Click);
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Snow;
+            this.label7.Location = new System.Drawing.Point(95, 542);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(187, 51);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Salary";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(95, 616);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(187, 51);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Profile";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
@@ -238,6 +220,17 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Snow;
+            this.label1.Location = new System.Drawing.Point(95, 393);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(187, 51);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Waitting";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // pictureBox1
             // 
@@ -251,6 +244,15 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // panelfill
+            // 
+            this.panelfill.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelfill.Location = new System.Drawing.Point(330, 0);
+            this.panelfill.Name = "panelfill";
+            this.panelfill.Size = new System.Drawing.Size(1125, 805);
+            this.panelfill.TabIndex = 1;
+            this.panelfill.Paint += new System.Windows.Forms.PaintEventHandler(this.panelfill_Paint);
             // 
             // nahid
             // 

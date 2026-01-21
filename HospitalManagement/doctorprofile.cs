@@ -134,5 +134,10 @@ namespace HospitalManagement
                 btnsave.BackColor = Color.Navy;
             }
         }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

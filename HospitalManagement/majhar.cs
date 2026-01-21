@@ -10,7 +10,7 @@ namespace HospitalManagement
     {
         
 
-       public static string constring = "server=Badhon\\SQLEXPRESS;Database=HMS;Trusted_connection=True;TrustServerCertificate=True;";
+       public static string constring = "server=localhost;Database=HMS;Trusted_connection=True;TrustServerCertificate=True;";
 
     }
 }

@@ -11,7 +11,7 @@ namespace HospitalManagement
 {
      public static class badhon
     {
-        public static string constring = "server=Badhon\\SQLEXPRESS;Database=HMS;Trusted_connection=True;TrustServerCertificate=True;";
+        public static string constring = "server=localhost;Database=HMS;Trusted_connection=True;TrustServerCertificate=True;";
         public static void delete(string table, string pkeyname, int p_key)
         {
             using (SqlConnection con = new SqlConnection(constring))

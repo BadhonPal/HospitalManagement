@@ -10,6 +10,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace HospitalManagement
 {
@@ -17,6 +18,46 @@ namespace HospitalManagement
     {
 
         int d_id;
+
+        private void LoadPatientChart()
+        {
+            string conString = "server=localhost;Database=HMS;Trusted_Connection=True;TrustServerCertificate=True;";
+
+            using (SqlConnection con = new SqlConnection(conString))
+            {
+                con.Open();
+
+                string query = @"SELECT date, COUNT(patient_id) AS totalPatient
+                         FROM book
+                         WHERE doctor_id = @did
+                         GROUP BY date
+                         ORDER BY date";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@did", d_id);
+                SqlDataReader dr = cmd.ExecuteReader();
+               
+
+                // Clear previous data
+                chart1.Series.Clear();
+
+                Series series = new Series("Total Patients");
+                series.ChartType = SeriesChartType.Column; // Bar graph
+                                                           // Use Line if you want: SeriesChartType.Line
+
+                while (dr.Read())
+                {
+                    series.Points.AddXY(
+                        Convert.ToDateTime(dr["date"]).ToShortDateString(),
+                        Convert.ToInt32(dr["totalPatient"])
+                    );
+                }
+
+                chart1.Series.Add(series);
+            }
+        }
+
+
 
         void getincome() {
             using (SqlConnection con = new SqlConnection(Global.constring))
@@ -95,6 +136,7 @@ namespace HospitalManagement
             getincome();
             waiting();
             totaltreatment();
+            LoadPatientChart();
 
 
 
