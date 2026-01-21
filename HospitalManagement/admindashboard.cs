@@ -16,7 +16,7 @@ namespace HospitalManagement
         void getdoctorcount() {
             string query = "SELECT COUNT(*) FROM Doctor";
 
-            using (SqlConnection con = new SqlConnection(badhon.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 SqlCommand cmd = new SqlCommand(query, con);
                 con.Open();
@@ -31,7 +31,7 @@ namespace HospitalManagement
         {
             string query = "SELECT COUNT(*) FROM Patient";
 
-            using (SqlConnection con = new SqlConnection(badhon.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 SqlCommand cmd = new SqlCommand(query, con);
                 con.Open();
@@ -45,7 +45,7 @@ namespace HospitalManagement
         {
             string query = "SELECT COUNT(*) FROM nurse";
 
-            using (SqlConnection con = new SqlConnection(badhon.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 SqlCommand cmd = new SqlCommand(query, con);
                 con.Open();

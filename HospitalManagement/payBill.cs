@@ -19,7 +19,7 @@ namespace HospitalManagement
         {
 
 
-            using (SqlConnection con = new SqlConnection(badhon.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 con.Open();
 
@@ -63,7 +63,7 @@ dataGridView1.Rows[e.RowIndex]
 
         private void btnpaid_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(badhon.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 con.Open();
 
@@ -86,7 +86,7 @@ dataGridView1.Rows[e.RowIndex]
 
         private void btnunpaid_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(badhon.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 con.Open();
 

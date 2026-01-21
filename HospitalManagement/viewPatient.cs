@@ -19,7 +19,7 @@ namespace HospitalManagement
         {
        
 
-            using (SqlConnection con = new SqlConnection(badhon.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 con.Open();
 
@@ -74,14 +74,14 @@ dataGridView2.Rows[e.RowIndex]
 
         private void btndelete_Click(object sender, EventArgs e)
         {
-            badhon.delete("patient", "patient_id", p_id);
+            Global.delete("patient", "patient_id", p_id);
             MessageBox.Show("successfully delete");
             patientLoad();
         }
 
         private void btnubdate_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(badhon.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 con.Open();
 

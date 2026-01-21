@@ -27,7 +27,7 @@ namespace HospitalManagement
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(badhon.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
 
             {
 
@@ -56,7 +56,7 @@ namespace HospitalManagement
             }
 
 
-            using (SqlConnection con = new SqlConnection(badhon.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 string gen;
                 if (rbmale.Checked)

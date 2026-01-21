@@ -15,7 +15,7 @@ namespace HospitalManagement
     public partial class patientdetails : Form
     {
         public void getpatient(int p_id) {
-            using (SqlConnection con = new SqlConnection(majhar.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 con.Open();
 

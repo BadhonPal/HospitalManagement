@@ -20,7 +20,7 @@ namespace HospitalManagement
         int p_id;
         public void showpretientinfo(int pid)
         {
-            using (SqlConnection con = new SqlConnection(aurpita.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 con.Open();
 
@@ -80,7 +80,7 @@ namespace HospitalManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(aurpita.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 con.Open();
                

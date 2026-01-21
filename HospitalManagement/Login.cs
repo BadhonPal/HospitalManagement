@@ -60,21 +60,36 @@ namespace HospitalManagement
 
                         if (dbPassword == inputPassword)
                         {
-
-                            int did = Convert.ToInt32(dbUserId);
+                            int userId = Convert.ToInt32(dbUserId);
+                            
                             if (dbRole == "doctor")
                             {
-
-                                nahid docForm = new nahid(did);
+                                nahid docForm = new nahid(userId);
                                 docForm.Show();
                                 this.Hide();
-
-
-
-
                             }
-
-
+                            else if (dbRole == "patient")
+                            {
+                                Patientdashboard patientForm = new Patientdashboard(userId);
+                                patientForm.Show();
+                                this.Hide();
+                            }
+                            else if (dbRole == "nurse")
+                            {
+                                nursedashboard nurseForm = new nursedashboard(userId);
+                                nurseForm.Show();
+                                this.Hide();
+                            }
+                            else if (dbRole == "admin")
+                            {
+                                admindashboard adminForm = new admindashboard();
+                                adminForm.Show();
+                                this.Hide();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Invalid role assigned to user.");
+                            }
                         }
                         else
                         {

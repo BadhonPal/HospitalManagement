@@ -19,10 +19,7 @@ namespace HospitalManagement
         private void LoadPatientsByDoctorFromAppointment()
 
         {
-
-            string constring = "server=DESKTOP-IBGVO76\\SQLEXPRESS;Database=HMS;Trusted_connection=True;TrustServerCertificate=True;";
-
-            using (SqlConnection con = new SqlConnection(constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
 
             {
 
@@ -90,7 +87,7 @@ dataGridView1.Rows[e.RowIndex]
             else
             {
 
-                using (SqlConnection con = new SqlConnection(aurpita.constring))
+                using (SqlConnection con = new SqlConnection(Global.constring))
                 {
                     con.Open();
 
@@ -118,7 +115,7 @@ VALUES (@patient_id,@doctor_id,@status,@disease,@date)";
 
 
                 }
-                using (SqlConnection con = new SqlConnection(aurpita.constring))
+                using (SqlConnection con = new SqlConnection(Global.constring))
                 {
                     con.Open();
 

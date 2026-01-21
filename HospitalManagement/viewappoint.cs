@@ -25,10 +25,7 @@ namespace HospitalManagement
         private void loadappointment()
 
         {
-
-            string constring = "server=DESKTOP-IBGVO76\\SQLEXPRESS;Database=HMS;Trusted_connection=True;TrustServerCertificate=True;";
-
-            using (SqlConnection con = new SqlConnection(constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
 
             {
 
@@ -91,7 +88,7 @@ dataGridView1.Rows[e.RowIndex]
 
         private void btdelete_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(aurpita.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 con.Open();
                 

@@ -34,7 +34,7 @@ namespace HospitalManagement
 
         private void btregister_Click(object sender, EventArgs e)
         {
-            using (SqlConnection con = new SqlConnection(aurpita.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 con.Open();
 
@@ -61,7 +61,7 @@ namespace HospitalManagement
 
 
 
-            using (SqlConnection con = new SqlConnection(aurpita.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                
                 string gen;

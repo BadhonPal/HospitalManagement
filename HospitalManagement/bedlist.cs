@@ -17,7 +17,7 @@ namespace HospitalManagement
 
         public void getbed()
         {
-            using (SqlConnection con = new SqlConnection(majhar.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 con.Open();
 

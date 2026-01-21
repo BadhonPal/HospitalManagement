@@ -19,7 +19,7 @@ namespace HospitalManagement
 
             string query = "SELECT COUNT(*) FROM Doctor";
 
-            using (SqlConnection con = new SqlConnection(aurpita.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 SqlCommand cmd = new SqlCommand(query, con);
                 con.Open();
@@ -34,7 +34,7 @@ namespace HospitalManagement
 
             string query = "SELECT COUNT(*) FROM Book";
 
-            using (SqlConnection con = new SqlConnection(aurpita.constring))
+            using (SqlConnection con = new SqlConnection(Global.constring))
             {
                 SqlCommand cmd = new SqlCommand(query, con);
                 con.Open();
