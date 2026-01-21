@@ -47,6 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="admindashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admindashboard.Designer.cs">
+      <DependentUpon>admindashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="badhon.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +66,12 @@
     </Compile>
     <Compile Include="doctorprofile.Designer.cs">
       <DependentUpon>doctorprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorRg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorRg.Designer.cs">
+      <DependentUpon>DoctorRg.cs</DependentUpon>
     </Compile>
     <Compile Include="Global.cs" />
     <Compile Include="Login.cs">
@@ -72,11 +86,23 @@
     <Compile Include="nahid.Designer.cs">
       <DependentUpon>nahid.cs</DependentUpon>
     </Compile>
+    <Compile Include="NurseRg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NurseRg.Designer.cs">
+      <DependentUpon>NurseRg.cs</DependentUpon>
+    </Compile>
     <Compile Include="oldPatient.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="oldPatient.Designer.cs">
       <DependentUpon>oldPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payBill.Designer.cs">
+      <DependentUpon>payBill.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,17 +112,41 @@
     <Compile Include="Treatment.Designer.cs">
       <DependentUpon>Treatment.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewDocotor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewDocotor.Designer.cs">
+      <DependentUpon>viewDocotor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewNurse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewNurse.Designer.cs">
+      <DependentUpon>viewNurse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewPatient.Designer.cs">
+      <DependentUpon>viewPatient.cs</DependentUpon>
+    </Compile>
     <Compile Include="waitting.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="waitting.Designer.cs">
       <DependentUpon>waitting.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="admindashboard.resx">
+      <DependentUpon>admindashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="doctorprofile.resx">
       <DependentUpon>doctorprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorRg.resx">
+      <DependentUpon>DoctorRg.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -104,8 +154,14 @@
     <EmbeddedResource Include="nahid.resx">
       <DependentUpon>nahid.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="NurseRg.resx">
+      <DependentUpon>NurseRg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="oldPatient.resx">
       <DependentUpon>oldPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payBill.resx">
+      <DependentUpon>payBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -119,6 +175,15 @@
     </Compile>
     <EmbeddedResource Include="Treatment.resx">
       <DependentUpon>Treatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewDocotor.resx">
+      <DependentUpon>viewDocotor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewNurse.resx">
+      <DependentUpon>viewNurse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewPatient.resx">
+      <DependentUpon>viewPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="waitting.resx">
       <DependentUpon>waitting.cs</DependentUpon>
@@ -186,6 +251,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nahidprofilr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatsApp Image 2026-01-20 at 1.08.07 AM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adminBackground.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
